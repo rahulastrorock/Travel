@@ -32,4 +32,4 @@ const travelGuideSchema = new mongoose.Schema({
   isPublic: { type: Boolean, default: true }
 }, { timestamps: true });
 
-module.exports = mongoose.model('TravelGuide', travelGuideSchema);
+module.exports = travelGuideSchema;

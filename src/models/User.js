@@ -10,4 +10,4 @@ const userSchema = new mongoose.Schema({
   groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'TravelGroup' }]
 });
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = userSchema;

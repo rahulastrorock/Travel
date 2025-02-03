@@ -15,4 +15,4 @@ const travelGroupSchema = new mongoose.Schema({
   messages: [messageSchema]
 }, { timestamps: true });
 
-module.exports = mongoose.model('TravelGroup', travelGroupSchema);
+module.exports = travelGroupSchema;
