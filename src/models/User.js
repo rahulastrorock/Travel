@@ -7,7 +7,9 @@ const userSchema = new mongoose.Schema({
   role: { type: String, enum: ['admin', 'visitor'], default: 'visitor' },
   favoriteGuides: [{ type: mongoose.Schema.Types.ObjectId, ref: 'TravelGuide' }],
   createdAt: { type: Date, default: Date.now },
-  groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'TravelGroup' }]
+  groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'TravelGroup' }],
+  resetPasswordToken: String,
+  resetPasswordExpiry: Date
 });
 
 module.exports = userSchema;

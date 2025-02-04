@@ -1,0 +1,23 @@
+
+Time: 2025-02-04T17:37:01.444Z
+Error: Unexpected token 'B', "Body:
+{
+"... is not valid JSON
+Stack: SyntaxError: Unexpected token 'B', "Body:
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+Method: POST
+URL: /api/groups
+Body: {}
+User-Agent: PostmanRuntime/7.43.0
+-----------------------------------------
