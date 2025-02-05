@@ -1,6 +1,6 @@
 const TravelGuide = require('../utils/connection.utils').getTravelGuideCollection;
 const User = require('../utils/connection.utils').getUserCollection;
-
+const crypto = require('crypto');
 class GuideService {
     async listPublicGuides(query = {}) {
         const guides = await TravelGuide.find(query)
@@ -18,7 +18,7 @@ class GuideService {
 
     async searchGuides(searchParams) {
         try {
-            const { destination, duration, budget, productType } = searchParams;
+            const { destination, duration, budget, productType, tag } = searchParams;
             const query = {};
 
             // Build search query
@@ -35,10 +35,14 @@ class GuideService {
             if (productType) {
                 query.productType = productType;
             }
+            // Add tag search
+            if (tag) {
+                query.tags = { $regex: new RegExp(tag, 'i') };
+            }
 
             // Get matching guides
             const guides = await TravelGuide.find(query)
-                .select('title destination description duration budget productType photos averageRating totalReviews')
+                .select('title destination description duration budget productType photos averageRating totalReviews tags')
                 .sort({ averageRating: -1 })
                 .limit(20);
 
@@ -89,6 +93,50 @@ class GuideService {
             .populate('favoriteGuides');
         return user.favoriteGuides;
     }
+
+    async generateShareLink(userId, guideId) {
+        // Check if user has this guide in favorites
+        const user = await User.findById(userId);
+        if (!user.favoriteGuides.includes(guideId)) {
+            throw new Error('Guide not found in favorites');
+        }
+
+        // Generate unique share token
+        const shareToken = crypto.randomBytes(32).toString('hex');
+
+        // Save share token with guide reference
+        await TravelGuide.findByIdAndUpdate(guideId, {
+            $push: {
+                shareLinks: {
+                    token: shareToken,
+                    createdBy: userId,
+                    createdAt: new Date()
+                }
+            }
+        });
+
+        return shareToken;
+    }
+
+    async getSharedGuide(shareToken) {
+
+        //dont show shareLinks in the response
+        const guide = await TravelGuide.findOne({ 'shareLinks.token': shareToken }, { shareLinks: 0 });
+
+        if (!guide) {
+            throw new Error('Invalid share link');
+        }
+
+        return guide;
+    }
+
+
+
+
+
+
+
+
 
     async createGuide(guideData, creatorId) {
         const guide = new TravelGuide({

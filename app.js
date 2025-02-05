@@ -40,6 +40,7 @@ app.use('/api/auth', require('./src/routes/auth.routes'));
 app.use('/api/guides', require('./src/routes/guide.routes'));
 app.use('/api/reviews', require('./src/routes/review.routes'));
 app.use('/api/groups', require('./src/routes/group.routes'));
+app.use('/api/itineraries', require('./src/routes/userItinerary.routes'));
 
 // Error handling middleware (must be last)
 app.use(errorLogger);

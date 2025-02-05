@@ -359,3 +359,408 @@ IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 Body: {"content":"Hello everyone!"}
 -----------------------------------------
+Time: 2025-02-05T06:33:18.894Z
+Method: POST
+URL: /api/groups/67a2504862e0d9f37f54a29e/messages
+Status: 401
+Duration: 28ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"content":"Hello everyone!"}
+-----------------------------------------
+Time: 2025-02-05T06:36:19.082Z
+Method: POST
+URL: /api/auth/login
+Status: 401
+Duration: 166ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"password123"}
+-----------------------------------------
+Time: 2025-02-05T06:36:46.434Z
+Method: POST
+URL: /api/auth/login
+Status: 401
+Duration: 76ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"pnewPassword123"}
+-----------------------------------------
+Time: 2025-02-05T06:36:55.723Z
+Method: POST
+URL: /api/auth/login
+Status: 200
+Duration: 74ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"newPassword123"}
+-----------------------------------------
+Time: 2025-02-05T06:39:22.706Z
+Method: POST
+URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
+Status: 401
+Duration: 7ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:39:36.089Z
+Method: POST
+URL: /api/auth/login
+Status: 401
+Duration: 88ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"newpassword123"}
+-----------------------------------------
+Time: 2025-02-05T06:40:29.583Z
+Method: POST
+URL: /api/auth/login
+Status: 200
+Duration: 79ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"newPassword123"}
+-----------------------------------------
+Time: 2025-02-05T06:40:53.902Z
+Method: POST
+URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
+Status: 400
+Duration: 16ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:41:28.955Z
+Method: POST
+URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
+Status: 200
+Duration: 43ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:43:02.357Z
+Method: GET
+URL: /shared-guide/25f88844e02c554ffa881d0558033ae9190d1a43a2baf6d7c2d1b14dd728f93b
+Status: 404
+Duration: 2ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T06:43:33.761Z
+Method: GET
+URL: /api/guides/shared/25f88844e02c554ffa881d0558033ae9190d1a43a2baf6d7c2d1b14dd728f93b
+Status: 401
+Duration: 1ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T06:44:58.290Z
+Method: GET
+URL: /api/setupDb
+Status: 200
+Duration: 16ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T06:47:59.149Z
+Method: GET
+URL: /api/setupDb
+Status: 200
+Duration: 28ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T06:49:09.835Z
+Method: GET
+URL: /api/auth/register
+Status: 404
+Duration: 13ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T06:49:13.315Z
+Method: POST
+URL: /api/auth/register
+Status: 201
+Duration: 78ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
+-----------------------------------------
+Time: 2025-02-05T06:50:03.909Z
+Method: POST
+URL: /api/auth/login
+Status: 200
+Duration: 73ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"password123"}
+-----------------------------------------
+Time: 2025-02-05T06:51:13.604Z
+Method: POST
+URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c
+Status: 200
+Duration: 14ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:52:14.892Z
+Method: POST
+URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
+Status: 200
+Duration: 11ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:54:27.343Z
+Method: POST
+URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
+Status: 200
+Duration: 36ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:55:40.666Z
+Method: POST
+URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
+Status: 200
+Duration: 38ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {}
+-----------------------------------------
+Time: 2025-02-05T06:56:08.487Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 401
+Duration: 0ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:09:26.020Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:09:29.515Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 401
+Duration: 0ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:11:35.998Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 1ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:15:20.845Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:15:22.236Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 1ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:15:52.129Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:15:57.789Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 1ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:16:59.648Z
+Method: GET
+URL: /api/guides/shared/1223
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:20:02.483Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 200
+Duration: 28ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:21:58.866Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 200
+Duration: 21ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:25:14.439Z
+Method: GET
+URL: /api/guides/search?tag=luxury
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T07:25:21.710Z
+Method: GET
+URL: /api/guides/search?tag=luxury
+Status: 200
+Duration: 27ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:43:11.114Z
+Method: GET
+URL: /api/setupdb
+Status: 200
+Duration: 31ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:43:39.345Z
+Method: POST
+URL: /api/auth/register
+Status: 201
+Duration: 105ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
+-----------------------------------------
+Time: 2025-02-05T17:43:44.411Z
+Method: POST
+URL: /api/auth/login
+Status: 200
+Duration: 74ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"email":"test@example.com","password":"password123"}
+-----------------------------------------
+Time: 2025-02-05T17:48:19.218Z
+Method: POST
+URL: /api/itineraries
+Status: 400
+Duration: 35ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"guideId":"guide_id","title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
+-----------------------------------------
+Time: 2025-02-05T17:49:07.794Z
+Method: GET
+URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
+Status: 500
+Duration: 7ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:49:17.851Z
+Method: GET
+URL: /api/guides/search?tag=luxury
+Status: 401
+Duration: 3ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:49:48.344Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 11ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:50:14.456Z
+Method: POST
+URL: /api/itineraries/
+Status: 201
+Duration: 23ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"guideId":"67a3a32f9da2d899c734cb5f","title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
+-----------------------------------------
+Time: 2025-02-05T17:55:22.418Z
+Method: POST
+URL: /api/itineraries/
+Status: 404
+Duration: 17ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
+-----------------------------------------
+Time: 2025-02-05T17:56:07.815Z
+Method: POST
+URL: /api/itineraries/67a3a32f9da2d899c734cb59
+Status: 201
+Duration: 40ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+Body: {"title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
+-----------------------------------------
+Time: 2025-02-05T17:58:00.734Z
+Method: GET
+URL: /api/itineraries
+Status: 401
+Duration: 5ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-05T17:58:16.581Z
+Method: GET
+URL: /api/itineraries
+Status: 200
+Duration: 31ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------

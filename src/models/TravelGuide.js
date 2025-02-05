@@ -29,6 +29,11 @@ const travelGuideSchema = new mongoose.Schema({
   averageRating: { type: Number, default: 0 },
   totalReviews: { type: Number, default: 0 },
   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  shareLinks: [{
+    token: String,
+    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    createdAt: { type: Date, default: Date.now }
+  }],
   isPublic: { type: Boolean, default: true }
 }, { timestamps: true });
 

@@ -3,6 +3,9 @@ const router = express.Router();
 const guideService = require('../services/guide.service');
 const { authenticate } = require('../middleware/auth.middleware');
 const { isAdmin } = require('../middleware/admin.middleware');
+require('dotenv').config();
+const { successResponse, errorResponse } = require('../utils/response.utils');
+
 // const { guideValidators } = require('../middleware/validators/guide.validator');
 
 // Public routes
@@ -26,6 +29,29 @@ router.get('/details/:id', async (req, res) => {
         res.status(500).json({ success: false, message: error.message });
     }
 });
+
+
+// Access shared guide (public route)
+router.get('/shared/:token', async (req, res) => {
+    try {
+        const { token } = req.params;
+        if (!token) {
+            return errorResponse(res, 400, 'No token provided');
+        }
+        const guide = await guideService.getSharedGuide(token);
+    
+        if (!guide) {
+            return errorResponse(res, 404, 'Guide not found');
+        }
+
+        return successResponse(res, 200, 'Guide retrieved successfully', guide);
+    } catch (error) {
+        return errorResponse(res, 500, error.message);
+    }
+});
+
+
+
 
 // Authenticated routes
 router.use(authenticate);
@@ -73,6 +99,33 @@ router.get('/favorites', async (req, res) => {
         res.status(500).json({ success: false, message: error.message });
     }
 });
+
+
+// Generate share link for favorite guide
+router.post('/favorites/:guideId/share', authenticate, async (req, res) => {
+    try {
+        const shareToken = await guideService.generateShareLink(req.user._id, req.params.guideId);
+        // const shareLink = `${process.env.FRONTEND_URL}/shared-guide/${shareToken}`;
+        
+        res.json({
+            success: true,
+            data: {
+                // shareLink,
+                shareToken
+            }
+        });
+    } catch (error) {
+        res.status(400).json({
+            success: false,
+            message: error.message
+        });
+    }
+});
+
+
+
+
+
 
 // Admin routes
 router.use(isAdmin);
