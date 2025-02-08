@@ -21,3 +21,11 @@ URL: /api/groups
 Body: {}
 User-Agent: PostmanRuntime/7.43.0
 -----------------------------------------
+Time: 2025-02-08T15:57:12.108Z
+Error: ENOENT: no such file or directory, open 'C:\Users\rahul\Desktop\TravelTrove\Server\src\uploads\1739030232106-IMG_20221204_084157.jpg'
+Stack: Error: ENOENT: no such file or directory, open 'C:\Users\rahul\Desktop\TravelTrove\Server\src\uploads\1739030232106-IMG_20221204_084157.jpg'
+Method: POST
+URL: /api/guides
+Body: {"title":"New delhi "}
+User-Agent: PostmanRuntime/7.43.0
+-----------------------------------------

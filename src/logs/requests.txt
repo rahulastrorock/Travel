@@ -1,766 +1,3025 @@
 
-Time: 2025-02-03T18:38:17.083Z
+Time: 2025-02-08T19:07:15.057Z
 Method: GET
-URL: /api/setupdb
-Status: 200
-Duration: 24ms
+URL: /api/guides/search?destination=dubai&productType=tour
+Status: 304
+Duration: 4ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-03T18:40:23.440Z
+Time: 2025-02-08T19:07:25.764Z
 Method: GET
-URL: /api/setupdb
+URL: /api/guides/search?destination=Dubai%20%26%20Abu%20Dhabi%20Explorer&productType=tour
 Status: 200
-Duration: 12ms
+Duration: 3ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-03T18:42:20.259Z
-Method: POST
-URL: /api/auth/register
-Status: 400
-Duration: 87ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-03T18:46:33.030Z
-Method: POST
-URL: /api/auth/register
-Status: 400
-Duration: 71ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-03T18:47:01.007Z
+Time: 2025-02-08T19:07:50.253Z
 Method: GET
-URL: /api/setupdb
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
-Duration: 25ms
+Duration: 3ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-03T18:47:04.106Z
-Method: POST
-URL: /api/auth/register
-Status: 400
-Duration: 84ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-03T18:48:42.929Z
-Method: POST
-URL: /api/auth/register
-Status: 201
-Duration: 99ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-03T18:51:10.514Z
-Method: POST
-URL: /api/auth/login
-Status: 200
-Duration: 74ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
------------------------------------------
-Time: 2025-02-03T18:54:01.851Z
+Time: 2025-02-08T19:08:21.832Z
 Method: GET
-URL: /api/guides/list
-Status: 500
-Duration: 6ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T18:57:02.363Z
-Method: GET
-URL: /api/guides/list
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
-Duration: 19ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T18:59:06.234Z
-Method: GET
-URL: /api/guides/list
-Status: 200
-Duration: 6ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T18:59:17.622Z
-Method: GET
-URL: /api/guides/details/67a10f249bd3aa96462b9eae
-Status: 200
-Duration: 17ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T19:02:17.587Z
-Method: POST
-URL: /api/auth/login
-Status: 200
-Duration: 90ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
------------------------------------------
-Time: 2025-02-03T19:02:32.699Z
-Method: GET
-URL: /api/guides/search?destination=Dubai&duration=7&productType=tour
-Status: 401
 Duration: 3ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-03T19:11:13.492Z
-Method: GET
-URL: /api/guides/search?destination=Dubai&duration=7&productType=tour
-Status: 401
-Duration: 8ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T19:12:09.627Z
-Method: GET
-URL: /api/guides/search?destination=Dubai&duration=7&productType=tour
-Status: 401
-Duration: 7ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-03T19:12:16.690Z
-Method: POST
-URL: /api/auth/login
-Status: 200
-Duration: 90ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
------------------------------------------
-Time: 2025-02-03T19:12:31.419Z
-Method: GET
-URL: /api/guides/search?destination=Dubai&duration=7&productType=tour
-Status: 401
-Duration: 2ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T15:49:48.230Z
-Method: GET
-URL: /api/guides/search?destination=Dubai&duration=7&productType=tour
-Status: 200
-Duration: 45ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T15:53:18.041Z
-Method: GET
-URL: /api/guides/search?destination=Dubai
-Status: 200
-Duration: 12ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T15:56:15.994Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead
-Status: 200
-Duration: 16ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-04T15:56:32.733Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead
-Status: 200
-Duration: 8ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-04T16:00:46.210Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead
-Status: 500
-Duration: 31ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-04T16:20:52.479Z
-Method: GET
-URL: /api/auth/forgot-password
-Status: 404
-Duration: 25ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T16:21:00.755Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 3ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:22:03.793Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 16ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:22:46.149Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 23ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:23:34.520Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 27ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:25:02.784Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 21ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:26:50.652Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 400
-Duration: 23ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:29:12.705Z
-Method: POST
-URL: /api/auth/forgot-password
-Status: 200
-Duration: 25ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com"}
------------------------------------------
-Time: 2025-02-04T16:31:49.381Z
-Method: POST
-URL: /api/auth/reset-password
-Status: 200
-Duration: 76ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"token":"df059c909059a3929acacc612dc1bc8fb80fb8cc68822d87ed4449822f7c3a9c","newPassword":"newPassword123"}
------------------------------------------
-Time: 2025-02-04T17:32:01.907Z
+Time: 2025-02-08T19:09:35.336Z
 Method: GET
 URL: /api/guides/list
 Status: 200
-Duration: 20ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T17:37:01.445Z
-Method: POST
-URL: /api/groups
-Status: 400
-Duration: 20ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-04T17:37:12.955Z
-Method: POST
-URL: /api/groups
-Status: 201
-Duration: 38ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"name":"Dubai Explorers","description":"Group for Dubai travel enthusiasts","isPublic":true}
------------------------------------------
-Time: 2025-02-04T17:38:08.581Z
-Method: GET
-URL: /api/groups/public
-Status: 200
-Duration: 11ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T17:39:14.362Z
-Method: GET
-URL: /api/groups/67a2504862e0d9f37f54a29e/messages
-Status: 200
-Duration: 8ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T17:43:25.879Z
-Method: GET
-URL: /api/groups/67a2504862e0d9f37f54a29e/messages
-Status: 200
-Duration: 40ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T17:43:33.151Z
-Method: GET
-URL: /api/groups/67a2504862e0d9f37f54a29e/messages
-Status: 200
-Duration: 10ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-04T17:43:48.478Z
-Method: POST
-URL: /api/groups/67a2504862e0d9f37f54a29e/messages
-Status: 201
-Duration: 32ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"content":"Hello everyone!"}
------------------------------------------
-Time: 2025-02-05T06:33:18.894Z
-Method: POST
-URL: /api/groups/67a2504862e0d9f37f54a29e/messages
-Status: 401
-Duration: 28ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"content":"Hello everyone!"}
------------------------------------------
-Time: 2025-02-05T06:36:19.082Z
-Method: POST
-URL: /api/auth/login
-Status: 401
-Duration: 166ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
------------------------------------------
-Time: 2025-02-05T06:36:46.434Z
-Method: POST
-URL: /api/auth/login
-Status: 401
-Duration: 76ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"pnewPassword123"}
------------------------------------------
-Time: 2025-02-05T06:36:55.723Z
-Method: POST
-URL: /api/auth/login
-Status: 200
-Duration: 74ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"newPassword123"}
------------------------------------------
-Time: 2025-02-05T06:39:22.706Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
-Status: 401
 Duration: 7ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:39:36.089Z
-Method: POST
-URL: /api/auth/login
-Status: 401
-Duration: 88ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"newpassword123"}
------------------------------------------
-Time: 2025-02-05T06:40:29.583Z
-Method: POST
-URL: /api/auth/login
-Status: 200
-Duration: 79ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"newPassword123"}
------------------------------------------
-Time: 2025-02-05T06:40:53.902Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
-Status: 400
-Duration: 16ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:41:28.955Z
-Method: POST
-URL: /api/guides/favorites/67a10f249bd3aa96462b9ead/share
-Status: 200
-Duration: 43ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:43:02.357Z
-Method: GET
-URL: /shared-guide/25f88844e02c554ffa881d0558033ae9190d1a43a2baf6d7c2d1b14dd728f93b
-Status: 404
-Duration: 2ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-05T06:43:33.761Z
+Time: 2025-02-08T19:09:35.377Z
 Method: GET
-URL: /api/guides/shared/25f88844e02c554ffa881d0558033ae9190d1a43a2baf6d7c2d1b14dd728f93b
-Status: 401
+URL: /uploads/dubai.jpg
+Status: 304
 Duration: 1ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-05T06:44:58.290Z
+Time: 2025-02-08T19:09:35.381Z
 Method: GET
-URL: /api/setupDb
-Status: 200
-Duration: 16ms
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-05T06:47:59.149Z
+Time: 2025-02-08T19:09:35.389Z
 Method: GET
-URL: /api/setupDb
-Status: 200
-Duration: 28ms
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-05T06:49:09.835Z
+Time: 2025-02-08T19:09:35.389Z
 Method: GET
-URL: /api/auth/register
-Status: 404
-Duration: 13ms
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:35.398Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:35.399Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.265Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.293Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.294Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.302Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.302Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.310Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:39.311Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.255Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.301Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.304Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.313Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.314Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.321Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:46.321Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:09:52.403Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 304
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:12:06.909Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T06:49:13.315Z
-Method: POST
-URL: /api/auth/register
-Status: 201
-Duration: 78ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-05T06:50:03.909Z
-Method: POST
-URL: /api/auth/login
+Time: 2025-02-08T19:12:11.820Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
-Duration: 73ms
+Duration: 6ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
+
 -----------------------------------------
-Time: 2025-02-05T06:51:13.604Z
-Method: POST
-URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c
+Time: 2025-02-08T19:12:20.436Z
+Method: GET
+URL: /api/guides/list
 Status: 200
-Duration: 14ms
+Duration: 6ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
-Body: {}
+
 -----------------------------------------
-Time: 2025-02-05T06:52:14.892Z
-Method: POST
-URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
-Status: 200
-Duration: 11ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:54:27.343Z
-Method: POST
-URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
+Time: 2025-02-08T19:13:56.756Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
 Duration: 36ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:55:40.666Z
-Method: POST
-URL: /api/guides/favorites/67a3099f5a5cb543b0b3b17c/share
-Status: 200
-Duration: 38ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {}
------------------------------------------
-Time: 2025-02-05T06:56:08.487Z
-Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 401
-Duration: 0ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T07:09:26.020Z
+Time: 2025-02-08T19:14:50.999Z
 Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 401
-Duration: 5ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:09:29.515Z
-Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 401
-Duration: 0ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:11:35.998Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 1ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:15:20.845Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 5ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:15:22.236Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 1ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:15:52.129Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 5ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:15:57.789Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 1ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:16:59.648Z
-Method: GET
-URL: /api/guides/shared/1223
-Status: 401
-Duration: 5ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:20:02.483Z
-Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 200
-Duration: 28ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:21:58.866Z
-Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 200
-Duration: 21ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:25:14.439Z
-Method: GET
-URL: /api/guides/search?tag=luxury
-Status: 401
-Duration: 5ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T07:25:21.710Z
-Method: GET
-URL: /api/guides/search?tag=luxury
-Status: 200
-Duration: 27ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-
------------------------------------------
-Time: 2025-02-05T17:43:11.114Z
-Method: GET
-URL: /api/setupdb
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
 Duration: 31ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T17:43:39.345Z
-Method: POST
-URL: /api/auth/register
-Status: 201
-Duration: 105ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"username":"testuser","email":"test@example.com","password":"password123","role":"visitor"}
------------------------------------------
-Time: 2025-02-05T17:43:44.411Z
-Method: POST
-URL: /api/auth/login
+Time: 2025-02-08T19:15:39.293Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
 Status: 200
-Duration: 74ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"email":"test@example.com","password":"password123"}
------------------------------------------
-Time: 2025-02-05T17:48:19.218Z
-Method: POST
-URL: /api/itineraries
-Status: 400
-Duration: 35ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"guideId":"guide_id","title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
------------------------------------------
-Time: 2025-02-05T17:49:07.794Z
-Method: GET
-URL: /api/guides/shared/00e9c31200e9c40fd8c4d69491b88721c65e4374865d0ad59cc8ac658500f138
-Status: 500
-Duration: 7ms
+Duration: 34ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T17:49:17.851Z
+Time: 2025-02-08T19:17:28.209Z
 Method: GET
-URL: /api/guides/search?tag=luxury
-Status: 401
-Duration: 3ms
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 31ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T17:49:48.344Z
+Time: 2025-02-08T19:17:35.096Z
 Method: GET
 URL: /api/guides/list
 Status: 200
-Duration: 11ms
+Duration: 12ms
 IP: ::1
 User-Agent: PostmanRuntime/7.43.0
 
 -----------------------------------------
-Time: 2025-02-05T17:50:14.456Z
-Method: POST
-URL: /api/itineraries/
-Status: 201
-Duration: 23ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"guideId":"67a3a32f9da2d899c734cb5f","title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
------------------------------------------
-Time: 2025-02-05T17:55:22.418Z
-Method: POST
-URL: /api/itineraries/
-Status: 404
-Duration: 17ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
------------------------------------------
-Time: 2025-02-05T17:56:07.815Z
-Method: POST
-URL: /api/itineraries/67a3a32f9da2d899c734cb59
-Status: 201
-Duration: 40ms
-IP: ::1
-User-Agent: PostmanRuntime/7.43.0
-Body: {"title":"My Dubai Adventure","customItinerary":[{"day":1,"activities":["Desert Safari","BBQ Dinner"],"selectedLodging":{"name":"Burj Al Arab","description":"Luxury 7-star hotel","priceRange":"High"},"selectedDining":[{"name":"Al Hadheerah","cuisine":"Arabic","priceRange":"High"}]},{"day":2,"activities":["Burj Khalifa","Dubai Mall"],"selectedLodging":{"name":"Atlantis The Palm","description":"Luxury beach resort","priceRange":"High"},"selectedDining":[{"name":"Pierchic","cuisine":"Seafood","priceRange":"High"}]}],"totalBudget":{"min":150000,"max":200000,"currency":"INR"}}
------------------------------------------
-Time: 2025-02-05T17:58:00.734Z
+Time: 2025-02-08T19:18:21.654Z
 Method: GET
-URL: /api/itineraries
-Status: 401
+URL: /api/guides/list
+Status: 200
+Duration: 12ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:18:39.261Z
+Method: GET
+URL: /api/guides/search?destination=Dubai
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-08T19:18:47.796Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: PostmanRuntime/7.43.0
+
+-----------------------------------------
+Time: 2025-02-08T19:18:56.888Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 9ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:20:02.542Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 27ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:20:44.332Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 14ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.040Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 10ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.092Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
 Duration: 5ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------
-Time: 2025-02-05T17:58:16.581Z
+Time: 2025-02-08T19:21:59.094Z
 Method: GET
-URL: /api/itineraries
-Status: 200
-Duration: 31ms
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 5ms
 IP: ::1
-User-Agent: PostmanRuntime/7.43.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.115Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.116Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.118Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:21:59.124Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.308Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 9ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.332Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.334Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.344Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.345Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.352Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:00.353Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.411Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 10ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.429Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.430Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.437Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.438Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.445Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:03.445Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.229Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 8ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.273Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.274Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.282Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.284Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.293Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:07.294Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.631Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 7ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.656Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.659Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.668Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.669Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.675Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:09.676Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.893Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.914Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.914Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.922Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.922Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.929Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:10.930Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.895Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.916Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.917Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.925Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.925Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.931Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:12.933Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.811Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 7ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.838Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.839Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.850Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.851Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.861Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:15.862Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.607Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.629Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.631Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.637Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.637Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.644Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:27.645Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.176Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.198Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.198Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.206Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.208Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.215Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:31.216Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.224Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 9ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.255Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.256Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.267Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.268Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.276Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:34.279Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.588Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 8ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.617Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.618Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.627Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.627Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.633Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:36.635Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.846Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 9ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.871Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.873Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.883Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.884Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.890Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:38.891Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.445Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 8ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.471Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.475Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.484Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.484Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.497Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:47.498Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.605Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 10ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.642Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.645Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.655Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.656Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.667Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:48.669Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.878Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 8ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.895Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.896Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.905Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.906Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.912Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:49.913Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.172Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 7ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.205Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.206Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.213Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.214Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.220Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:22:53.221Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:23:03.783Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.910Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.959Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.961Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.970Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.970Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.977Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:52.979Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.470Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 9ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.488Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.490Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.499Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.500Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.508Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:54.509Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.272Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.304Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.305Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.316Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.317Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.327Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:24:58.328Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.933Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.972Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.972Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.982Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.983Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.986Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:18.991Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.291Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 7ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.340Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.342Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.352Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.353Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.363Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:32.364Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.158Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.181Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.183Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.192Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.192Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.199Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:42.200Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.129Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 8ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.175Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.178Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.189Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.190Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.200Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:46.201Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.139Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.174Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.180Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.184Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.188Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.192Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:25:50.195Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.205Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 7ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.245Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.248Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.261Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.264Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.278Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:01.279Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.534Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.565Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.566Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.574Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.577Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.582Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:02.583Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.681Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.708Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.710Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.717Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.718Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.725Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:10.726Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.681Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.718Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.720Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.728Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.729Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.738Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:21.740Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:26:49.503Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.446Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.501Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.501Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.511Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.511Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.519Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:08.520Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.022Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.068Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.070Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.078Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.078Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.089Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:11.090Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.879Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.903Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.903Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.910Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.911Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.918Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:12.919Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.807Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.829Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.831Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.838Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.840Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.846Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:15.847Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:27.545Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.636Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.705Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.706Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.715Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.721Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.728Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:27:58.729Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.074Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.117Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.121Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.127Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.130Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.138Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:00.139Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.087Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.140Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.142Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.151Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.153Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.159Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:40.159Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.538Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 5ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.596Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.596Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.603Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.604Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.610Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:28:43.612Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.317Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.348Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.350Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.360Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.361Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.369Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:34.369Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.546Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.584Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.586Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.594Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.595Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 0ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.602Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:30:58.603Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.851Z
+Method: GET
+URL: /api/guides/list
+Status: 200
+Duration: 6ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.884Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.884Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.894Z
+Method: GET
+URL: /uploads/egypt.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.895Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.902Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:33:44.903Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:10.927Z
+Method: GET
+URL: /api/guides/search?destination=Dubai&productType=tour
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:24.094Z
+Method: GET
+URL: /api/guides/search?productType=activity
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:24.104Z
+Method: GET
+URL: /uploads/maldives.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:24.106Z
+Method: GET
+URL: /uploads/newZealand.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:24.107Z
+Method: GET
+URL: /uploads/amazonRainforest.jpg
+Status: 304
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:24.104Z
+Method: GET
+URL: /uploads/swiss.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.853Z
+Method: GET
+URL: /api/guides/search?productType=tour&budget.min=180000&budget.max=400000
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.864Z
+Method: GET
+URL: /uploads/dubai.jpg
+Status: 304
+Duration: 1ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.866Z
+Method: GET
+URL: /uploads/thailand.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.865Z
+Method: GET
+URL: /uploads/japan.jpg
+Status: 304
+Duration: 2ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.866Z
+Method: GET
+URL: /uploads/italy.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:34:57.867Z
+Method: GET
+URL: /uploads/northernLights.jpg
+Status: 304
+Duration: 3ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+
+-----------------------------------------
+Time: 2025-02-08T19:35:58.848Z
+Method: GET
+URL: /api/guides/search?destination=Japan&productType=tour
+Status: 200
+Duration: 4ms
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
 
 -----------------------------------------

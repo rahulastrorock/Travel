@@ -53,9 +53,7 @@ data.travelGuides = [
     },
     productType: "tour",
     photos: [
-      "dubai_skyline.jpg",
-      "burj_khalifa.jpg",
-      "desert_safari.jpg"
+      "uploads/dubai.jpg"
     ],
     history: "Dubai's transformation from a small fishing village to a global metropolis...",
     culture: "Experience the rich Emirati culture and traditional hospitality...",
@@ -116,9 +114,7 @@ data.travelGuides = [
     },
     productType: "tour",
     photos: [
-      "cherry_blossom.jpg",
-      "mount_fuji.jpg",
-      "tokyo_tower.jpg"
+      "uploads/japan.jpg"
     ],
     history: "Japan's rich cultural heritage spanning thousands of years...",
     culture: "Experience the unique blend of traditional and modern Japanese culture...",
@@ -167,7 +163,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "activity",
-    photos: ["maldives_beach.jpg", "water_villa.jpg", "underwater.jpg"],
+    photos: ["uploads/maldives.jpg"],
     itinerary: [
       {
         day: 1,
@@ -191,6 +187,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "tour",
+    photos: ["uploads/egypt.jpg"],
     itinerary: [
       {
         day: 1,
@@ -214,6 +211,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "activity",
+    photos: ["uploads/swiss.jpg"],
     tags: ["mountains", "adventure", "scenic", "winter_sports", "luxury"],
     averageRating: 4.7,
     totalReviews: 540
@@ -229,6 +227,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "tour",
+    photos: ["uploads/thailand.jpg"],
     tags: ["beach", "culture", "food", "temples", "nightlife"],
     averageRating: 4.5,
     totalReviews: 920
@@ -244,6 +243,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "activity",
+    photos: ["uploads/newZealand.jpg"],
     tags: ["adventure", "nature", "lord_of_the_rings", "hiking", "scenic"],
     averageRating: 4.9,
     totalReviews: 480
@@ -259,6 +259,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "tour",
+    photos: ["uploads/italy.jpg"],
     tags: ["romance", "culture", "food", "history", "art"],
     averageRating: 4.8,
     totalReviews: 890
@@ -274,6 +275,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "activity",
+    photos: ["uploads/amazonRainforest.jpg"],
     tags: ["nature", "adventure", "wildlife", "eco_tourism", "indigenous"],
     averageRating: 4.6,
     totalReviews: 320
@@ -289,6 +291,7 @@ data.travelGuides = [
       currency: "INR"
     },
     productType: "tour",
+    photos: ["uploads/northernLights.jpg"],
     tags: ["northern_lights", "nature", "winter", "hot_springs", "adventure"],
     averageRating: 4.7,
     totalReviews: 410

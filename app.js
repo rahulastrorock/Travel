@@ -8,7 +8,7 @@ const { successResponse, errorResponse } = require('./src/utils/response.utils')
 const requestLogger = require('./src/middleware/requestLogger');
 const errorLogger = require('./src/middleware/errorLogger');
 const connectDB = require('./src/config/database')
-
+const cors = require('cors');
 // Create logs directory if it doesn't exist
 const logsDir = path.join(__dirname, 'logs');
 if (!fs.existsSync(logsDir)) {
@@ -17,9 +17,17 @@ if (!fs.existsSync(logsDir)) {
 
 const app = express();
 
+// app.use(cors());
+
+
 // Security middleware
-app.use(helmet());
-app.use(mongoSanitize());
+// app.use(helmet());
+// app.use(mongoSanitize());
+
+app.use((req, res, next) => {
+    res.set('Cross-Origin-Resource-Policy', 'cross-origin');
+    next();
+  });
 
 // Middleware 
 app.use(requestLogger); // Move logger before JSON parser
@@ -36,6 +44,8 @@ app.get('/api/setupdb', async (req, res, next) => {
 });
 
 // Routes
+app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')))
+
 app.use('/api/auth', require('./src/routes/auth.routes'));
 app.use('/api/guides', require('./src/routes/guide.routes'));
 app.use('/api/reviews', require('./src/routes/review.routes'));

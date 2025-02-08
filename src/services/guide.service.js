@@ -1,11 +1,10 @@
 const TravelGuide = require('../utils/connection.utils').getTravelGuideCollection;
 const User = require('../utils/connection.utils').getUserCollection;
-const crypto = require('crypto');
+
 class GuideService {
-    async listPublicGuides(query = {}) {
-        const guides = await TravelGuide.find(query)
-            .select('title destination description budget productType averageRating totalReviews')
-            .sort({ averageRating: -1 });
+    async listPublicGuides() {
+        //just retun all the guides
+        const guides = await TravelGuide.find()
         return guides;
     }
 
@@ -18,7 +17,7 @@ class GuideService {
 
     async searchGuides(searchParams) {
         try {
-            const { destination, duration, budget, productType, tag } = searchParams;
+            const { destination, duration, budget, productType } = searchParams;
             const query = {};
 
             // Build search query
@@ -35,48 +34,37 @@ class GuideService {
             if (productType) {
                 query.productType = productType;
             }
-            // Add tag search
-            if (tag) {
-                query.tags = { $regex: new RegExp(tag, 'i') };
-            }
 
             // Get matching guides
-            const guides = await TravelGuide.find(query)
-                .select('title destination description duration budget productType photos averageRating totalReviews tags')
-                .sort({ averageRating: -1 })
-                .limit(20);
+            const guides = await TravelGuide.find(query);
 
-            // Get recommendations based on tags
-            const tags = guides.flatMap(guide => guide.tags || []);
-            const uniqueTags = [...new Set(tags)];
+            // // Get recommendations based on tags
+            // const tags = guides.flatMap(guide => guide.tags || []);
+            // const uniqueTags = [...new Set(tags)];
 
-            const recommendations = uniqueTags.length > 0 ? 
-                await TravelGuide.find({
-                    tags: { $in: uniqueTags },
-                    _id: { $nin: guides.map(g => g._id) }
-                })
-                .select('title destination description duration budget productType photos averageRating totalReviews')
-                .sort({ averageRating: -1 })
-                .limit(5) : 
-                [];
+            // const recommendations = uniqueTags.length > 0 ? 
+            //     await TravelGuide.find({
+            //         tags: { $in: uniqueTags },
+            //         _id: { $nin: guides.map(g => g._id) }
+            //     })
+            //     .select('title destination description duration budget productType photos averageRating totalReviews')
+            //     .sort({ averageRating: -1 })
+            //     .limit(5) : 
+            //     [];
 
-            return { guides, recommendations };
+            return guides;
         } catch (error) {
             throw new Error(`Error searching guides: ${error.message}`);
         }
     }
 
     async addToFavorites(userId, guideId) {
-        //first check if the guide is already in the user's favorites if yes then return the message
-        //that the guide is already in the user's favorites else add the guide to the user's favorites
-        const user = await User.findById(userId);
-        if (user.favoriteGuides.includes(guideId)) {
-            throw new Error('Guide is already in favorites');
-        }
-        user.favoriteGuides.addToSet(guideId);
-        await user.save();
+        const user = await User.findByIdAndUpdate(
+            userId,
+            { $addToSet: { favoriteGuides: guideId } },
+            { new: true }
+        );
         return user;
-        
     }
 
     async removeFromFavorites(userId, guideId) {
@@ -93,50 +81,6 @@ class GuideService {
             .populate('favoriteGuides');
         return user.favoriteGuides;
     }
-
-    async generateShareLink(userId, guideId) {
-        // Check if user has this guide in favorites
-        const user = await User.findById(userId);
-        if (!user.favoriteGuides.includes(guideId)) {
-            throw new Error('Guide not found in favorites');
-        }
-
-        // Generate unique share token
-        const shareToken = crypto.randomBytes(32).toString('hex');
-
-        // Save share token with guide reference
-        await TravelGuide.findByIdAndUpdate(guideId, {
-            $push: {
-                shareLinks: {
-                    token: shareToken,
-                    createdBy: userId,
-                    createdAt: new Date()
-                }
-            }
-        });
-
-        return shareToken;
-    }
-
-    async getSharedGuide(shareToken) {
-
-        //dont show shareLinks in the response
-        const guide = await TravelGuide.findOne({ 'shareLinks.token': shareToken }, { shareLinks: 0 });
-
-        if (!guide) {
-            throw new Error('Invalid share link');
-        }
-
-        return guide;
-    }
-
-
-
-
-
-
-
-
 
     async createGuide(guideData, creatorId) {
         const guide = new TravelGuide({
