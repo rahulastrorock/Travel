@@ -21,7 +21,11 @@ const userItinerarySchema = new mongoose.Schema({
     },
     customItinerary: [{
         day: Number,
-        activities: [String],
+        activities: [{
+            name: String,        // Name of the activity
+            time: String,        // Time for the activity
+            duration: String     // Duration of the activity
+        }],
         selectedLodging: {
             name: String,
             description: String,

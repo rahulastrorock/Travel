@@ -29,3 +29,43 @@ URL: /api/guides
 Body: {"title":"New delhi "}
 User-Agent: PostmanRuntime/7.43.0
 -----------------------------------------
+Time: 2025-02-09T10:43:49.549Z
+Error: Expected double-quoted property name in JSON at position 81
+Stack: SyntaxError: Expected double-quoted property name in JSON at position 81
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Method: POST
+URL: /api/auth/login
+Body: {}
+User-Agent: PostmanRuntime/7.43.0
+-----------------------------------------
+Time: 2025-02-09T10:45:55.343Z
+Error: Unexpected token 'B', "Body:
+{
+"... is not valid JSON
+Stack: SyntaxError: Unexpected token 'B', "Body:
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\types\json.js:169:10)
+    at parse (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\types\json.js:86:15)
+    at C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\rahul\Desktop\TravelTrove\Server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+Method: POST
+URL: /api/reviews/guides/67a790879a216d73a1dc9901
+Body: {}
+User-Agent: PostmanRuntime/7.43.0
+-----------------------------------------

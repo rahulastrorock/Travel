@@ -53,7 +53,10 @@ data.travelGuides = [
     },
     productType: "tour",
     photos: [
-      "uploads/dubai.jpg"
+      "uploads/dubai.jpg",
+      "uploads/dubai2.jpg",
+      "uploads/dubai3.jpg",
+      "uploads/dubai4.jpg"
     ],
     history: "Dubai's transformation from a small fishing village to a global metropolis...",
     culture: "Experience the rich Emirati culture and traditional hospitality...",

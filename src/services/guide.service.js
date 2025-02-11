@@ -1,5 +1,6 @@
 const TravelGuide = require('../utils/connection.utils').getTravelGuideCollection;
 const User = require('../utils/connection.utils').getUserCollection;
+const crypto = require('crypto');
 
 class GuideService {
     async listPublicGuides() {
@@ -17,46 +18,45 @@ class GuideService {
 
     async searchGuides(searchParams) {
         try {
-            const { destination, duration, budget, productType } = searchParams;
+            console.log(searchParams);
+            const { destination, tags, budget, productType } = searchParams;
             const query = {};
-
+            
+    
             // Build search query
             if (destination) {
-                query.destination = new RegExp(destination, 'i');
+                query.destination = new RegExp(destination, 'i');  // Case-insensitive search
             }
-            if (duration) {
-                query.duration = { $lte: parseInt(duration) };
-            }
+            
             if (budget) {
-                if (budget.min) query['budget.min'] = { $gte: parseInt(budget.min) };
-                if (budget.max) query['budget.max'] = { $lte: parseInt(budget.max) };
+                // Apply both min and max budget filters correctly
+                if (budget.min !== undefined) query['budget.min'] = { $gte: parseInt(budget.min) }; // min filter
+                if (budget.max !== undefined) query['budget.max'] = { $lte: parseInt(budget.max) }; // max filter
             }
+    
+            if (tags) {
+                // If tags are provided, split by comma and search for matching tags
+                query.tags = { $in: tags.split(',').map(tag => tag.trim()) };
+            }
+    
             if (productType) {
                 query.productType = productType;
             }
-
-            // Get matching guides
+    
+            // Fetch matching guides from the database
             const guides = await TravelGuide.find(query);
-
-            // // Get recommendations based on tags
-            // const tags = guides.flatMap(guide => guide.tags || []);
-            // const uniqueTags = [...new Set(tags)];
-
-            // const recommendations = uniqueTags.length > 0 ? 
-            //     await TravelGuide.find({
-            //         tags: { $in: uniqueTags },
-            //         _id: { $nin: guides.map(g => g._id) }
-            //     })
-            //     .select('title destination description duration budget productType photos averageRating totalReviews')
-            //     .sort({ averageRating: -1 })
-            //     .limit(5) : 
-            //     [];
-
+    
+            if (guides.length === 0) {
+                throw new Error("No guides found matching your search criteria.");
+            }
+    
             return guides;
         } catch (error) {
+            // Handle any errors during the search process
             throw new Error(`Error searching guides: ${error.message}`);
         }
     }
+    
 
     async addToFavorites(userId, guideId) {
         const user = await User.findByIdAndUpdate(
@@ -81,6 +81,47 @@ class GuideService {
             .populate('favoriteGuides');
         return user.favoriteGuides;
     }
+
+    // async createShareableLink(userId, guideId) {
+    //     // Check if guide exists and user has access to it
+    //     const user = await User.findOne({
+    //         _id: userId,
+    //         favoriteGuides: guideId
+    //     });
+
+    //     if (!user) {
+    //         throw new Error('Guide not found in favorites');
+    //     }
+
+    //     // Generate share token
+    //     const shareToken = crypto.randomBytes(32).toString('hex');
+
+    //     // Update guide with share token
+    //     await TravelGuide.updateOne(
+    //         { _id: guideId },
+    //         {
+    //             $set: {
+    //                 shareLinks: shareToken
+    //             }
+    //         }
+    //     );
+    //     return shareToken;
+    // }
+
+    // async getSharedGuide(token) {
+    //     // Find guide with valid share token and not expired
+    //     const guide = await TravelGuide.findOne({
+    //         shareLinks: token
+    //     });
+
+    //     if (!guide) {
+    //         throw new Error('Shared guide not found or link expired');
+    //     }
+
+    //     return guide;
+    // }   
+
+
 
     async createGuide(guideData, creatorId) {
         const guide = new TravelGuide({

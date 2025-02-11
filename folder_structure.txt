@@ -270,3 +270,49 @@ Response:
     "email": "admin@travel.com",
     "password": "admin123"
 }
+
+
+
+
+
+
+
+
+
+// create itinerary
+POST http://localhost:3000/api/itineraries/{guideId}
+Headers: Authorization: Bearer your_token
+Body:
+{
+    "day": 1,
+    "activities": [
+        {
+            "name": "Visit Burj Khalifa",
+            "time": "9:00 AM",
+            "duration": "2 hours"
+        },
+        {
+            "name": "Dubai Mall",
+            "time": "12:00 PM",
+            "duration": "3 hours"
+        }
+    ]
+}
+Response:
+{
+    "success": true,
+    "data": {
+        "_id": "...",
+        "day": 1,
+        "activities": [...]
+    }
+}
+
+//get itinerary
+GET http://localhost:3000/api/itineraries/{guideId}
+Headers: Authorization: Bearer your_token
+Response:
+{
+    "success": true,
+    "data": [...]
+}

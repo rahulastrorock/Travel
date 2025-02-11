@@ -36,21 +36,23 @@ router.get('/', authenticate, async (req, res) => {
     }
 });
 
-// // Get specific itinerary
-// router.get('/:id', authenticate, async (req, res) => {
-//     try {
-//         const itinerary = await userItineraryService.getItineraryById(req.user._id, req.params.id);
-//         res.json({
-//             success: true,
-//             data: itinerary
-//         });
-//     } catch (error) {
-//         res.status(404).json({
-//             success: false,
-//             message: error.message
-//         });
-//     }
-// });
+// Get specific itinerary
+
+// api for this is /api/itineraries/:id
+router.get('/:id', authenticate, async (req, res) => {
+    try {
+        const itinerary = await userItineraryService.getItineraryById(req.user._id, req.params.id);
+        res.json({
+            success: true,
+            data: itinerary
+        });
+    } catch (error) {
+        res.status(404).json({
+            success: false,
+            message: error.message
+        });
+    }
+});
 
 // // Update itinerary
 // router.put('/:id', authenticate, async (req, res) => {

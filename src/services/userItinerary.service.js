@@ -3,27 +3,33 @@ const TravelGuide = require('../utils/connection.utils').getTravelGuideCollectio
 
 class UserItineraryService {
     async createItinerary(userId, data, guideId) {
-        const {  title, customItinerary, totalBudget } = data;
-
+        const { title, customItinerary, totalBudget } = data;
+      
         // Verify guide exists
         const guide = await TravelGuide.findById(guideId);
         if (!guide) {
-            throw new Error('Travel guide not found');
+          throw new Error('Travel guide not found');
         }
-
+      
+        // Ensure the custom itinerary data is well-formed
+        if (!customItinerary || !Array.isArray(customItinerary)) {
+          throw new Error('Invalid custom itinerary data');
+        }
+      
         // Create user itinerary
         const itinerary = new UserItinerary({
-            userId,
-            basedOnGuide: guideId,
-            title,
-            duration: customItinerary.length,
-            customItinerary,
-            totalBudget
+          userId,
+          basedOnGuide: guideId,
+          title,
+          duration: customItinerary.length,
+          customItinerary,
+          totalBudget
         });
-
+      
         await itinerary.save();
         return itinerary;
-    }
+      }
+      
 
     async getUserItineraries(userId) {
         return await UserItinerary.find({ userId })
@@ -31,18 +37,18 @@ class UserItineraryService {
             .sort('-createdAt');
     }
 
-    // async getItineraryById(userId, itineraryId) {
-    //     const itinerary = await UserItinerary.findOne({
-    //         _id: itineraryId,
-    //         userId
-    //     }).populate('basedOnGuide');
+    async getItineraryById(userId, itineraryId) {
+        const itinerary = await UserItinerary.findOne({
+            _id: itineraryId,
+            userId
+        }).populate('basedOnGuide');
 
-    //     if (!itinerary) {
-    //         throw new Error('Itinerary not found');
-    //     }
+        if (!itinerary) {
+            throw new Error('Itinerary not found');
+        }
 
-    //     return itinerary;
-    // }
+        return itinerary;
+    }
 
     // async updateItinerary(userId, itineraryId, updates) {
     //     const itinerary = await UserItinerary.findOne({

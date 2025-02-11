@@ -37,14 +37,29 @@ class AuthService {
 
     async login(email, password) {
         const User = await getUserCollection();
-        const user = await User.collection.findOne({ email });
+        // Update projection to include username and _id and role
+        const user = await User.collection.findOne(
+            { email },
+            { projection: { email: 1, password: 1, username: 1,role :1, _id: 1 } }
+        );
         
         if (!user || !await comparePassword(password, user.password)) {
             throw new Error('Invalid credentials');
         }
-        //this is bearer token
+
+        // Generate bearer token
         const token = generateToken(user._id);
-        return { user, token };
+
+        // Return user details and token
+        return { 
+            user: {
+                email: user.email,
+                username: user.username,
+                role: user.role,
+                _id: user._id
+            },
+            token 
+        };
     }
 
     async requestPasswordReset(email) {

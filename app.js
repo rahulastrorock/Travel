@@ -9,6 +9,7 @@ const requestLogger = require('./src/middleware/requestLogger');
 const errorLogger = require('./src/middleware/errorLogger');
 const connectDB = require('./src/config/database')
 const cors = require('cors');
+
 // Create logs directory if it doesn't exist
 const logsDir = path.join(__dirname, 'logs');
 if (!fs.existsSync(logsDir)) {
@@ -17,31 +18,29 @@ if (!fs.existsSync(logsDir)) {
 
 const app = express();
 
-// app.use(cors());
+// CORS Configuration
+const corsOptions = {
+    origin: 'http://localhost:4200',  // Your Angular app URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+};
 
+app.use(cors(corsOptions));
 
 // Security middleware
 // app.use(helmet());
 // app.use(mongoSanitize());
 
-app.use((req, res, next) => {
-    res.set('Cross-Origin-Resource-Policy', 'cross-origin');
-    next();
-  });
+// Remove this as we're using cors middleware now
+// app.use((req, res, next) => {
+//     res.set('Cross-Origin-Resource-Policy', 'cross-origin');
+//     next();
+// });
 
 // Middleware 
-app.use(requestLogger); // Move logger before JSON parser
+app.use(requestLogger);
 app.use(express.json());
-
-// API Routes
-app.get('/api/setupdb', async (req, res, next) => {
-    try {
-        const result = await connectDB.setupDb();
-        successResponse(res, 200, 'Database seeded successfully', result.data);
-    } catch (error) {
-        next(error); // Pass to error handler
-    }
-});
 
 // Routes
 app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')))
@@ -51,6 +50,16 @@ app.use('/api/guides', require('./src/routes/guide.routes'));
 app.use('/api/reviews', require('./src/routes/review.routes'));
 app.use('/api/groups', require('./src/routes/group.routes'));
 app.use('/api/itineraries', require('./src/routes/userItinerary.routes'));
+
+// API Routes
+app.get('/api/setupdb', async (req, res, next) => {
+    try {
+        const result = await connectDB.setupDb();
+        successResponse(res, 200, 'Database seeded successfully', result.data);
+    } catch (error) {
+        next(error);
+    }
+});
 
 // Error handling middleware (must be last)
 app.use(errorLogger);
