@@ -30,7 +30,16 @@ router.get('/details/:id', async (req, res) => {
 router.get('/search', 
     async (req, res) => {
         try {
-            const searchResults = await guideService.searchGuides(req.query);
+            const { productType, destination, tags, 'budget.min': budgetMin, 'budget.max': budgetMax } = req.query;
+            // Convert 'budget.min' and 'budget.max' into 'budgetMin' and 'budgetMax' for easier handling
+            const searchParams = {
+                productType,
+                destination,
+                tags,
+                budgetMin,
+                budgetMax
+            };
+            const searchResults = await guideService.searchGuides(searchParams);
             res.json({
                 success: true,
                 data: searchResults
@@ -125,6 +134,8 @@ router.get('/favorites', async (req, res) => {
 // Admin routes
 router.use(isAdmin);
 
+
+//create guide
 router.post('/', 
     upload.array('photos', 5), // Add this middleware for handling file uploads
     async (req, res) => {
@@ -145,7 +156,7 @@ router.post('/',
     }
 );
 
-
+//update guide
 router.put('/:id', 
     upload.array('photos', 5), // Add upload middleware
     async (req, res) => {
@@ -173,6 +184,8 @@ router.put('/:id',
     }
 );
 
+
+//delete guide
 router.delete('/:id', async (req, res) => {
     try {
         await guideService.deleteGuide(req.params.id);
@@ -182,34 +195,5 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-
-// //for file upload
-// router.post('/',
-//     upload.array('photos', 5), // 'photos' is the field name, 5 is max number of files
-//     async (req, res) => {
-//         try {
-//             // Get file paths
-//             const photoPaths = req.files.map(file => `/uploads/${file.filename}`);
-            
-//             // Create guide with photos
-//             const guide = new TravelGuide({
-//                 ...req.body,
-//                 photos: photoPaths,
-//                 createdBy: req.user._id
-//             });
- 
-//             await guide.save();
-//             res.status(201).json({
-//                 success: true,
-//                 data: guide
-//             });
-//         } catch (error) {
-//             res.status(400).json({
-//                 success: false,
-//                 message: error.message
-//             });
-//         }
-//     }
-//  );
  
 module.exports = router;

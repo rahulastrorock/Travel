@@ -3,26 +3,26 @@ const router = express.Router();
 const authService = require('../services/auth.service');
 const { successResponse, errorResponse } = require('../utils/response.utils');
 
-router.post('/register', async (req, res) => {
+router.post('/register', async (req, res,next) => {
   try {
     const { user, token } = await authService.register(req.body);
     return successResponse(res, 201, 'Registration successful', { token });
   } catch (error) {
-    return errorResponse(res, 400, error.message);
+    next(error)
   }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/login', async (req, res,next) => {
   try {
     const { user, token } = await authService.login(req.body.email, req.body.password);
     return successResponse(res, 200, 'Login successful', { user,token });
   } catch (error) {
-    return errorResponse(res, 401, error.message);
+    next(error)
   }
 });
 
 
-router.post('/forgot-password', async (req, res) => {
+router.post('/forgot-password', async (req, res,next) => {
   try {
       const resetToken = await authService.requestPasswordReset(req.body.email);
       res.json({
@@ -31,14 +31,11 @@ router.post('/forgot-password', async (req, res) => {
           data: { resetToken }
       });
   } catch (error) {
-      res.status(400).json({
-          success: false,
-          message: error.message
-      });
+    next(error)
   }
 });
 
-router.post('/reset-password', async (req, res) => {
+router.post('/reset-password', async (req, res,next) => {
   try {
       await authService.resetPassword(req.body.token, req.body.newPassword);
       res.json({
@@ -46,10 +43,7 @@ router.post('/reset-password', async (req, res) => {
           message: 'Password reset successful'
       });
   } catch (error) {
-      res.status(400).json({
-          success: false,
-          message: error.message
-      });
+    next(error)
   }
 });
 

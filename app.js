@@ -1,8 +1,6 @@
 const path = require('path');
 require('dotenv').config();
 const express = require('express');
-const helmet = require('helmet');
-const mongoSanitize = require('express-mongo-sanitize');
 const fs = require('fs');
 const { successResponse, errorResponse } = require('./src/utils/response.utils');
 const requestLogger = require('./src/middleware/requestLogger');
@@ -10,33 +8,12 @@ const errorLogger = require('./src/middleware/errorLogger');
 const connectDB = require('./src/config/database')
 const cors = require('cors');
 
-// Create logs directory if it doesn't exist
-const logsDir = path.join(__dirname, 'logs');
-if (!fs.existsSync(logsDir)) {
-    fs.mkdirSync(logsDir);
-}
 
 const app = express();
 
-// CORS Configuration
-const corsOptions = {
-    origin: 'http://localhost:4200',  // Your Angular app URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true
-};
 
-app.use(cors(corsOptions));
+app.use(cors());
 
-// Security middleware
-// app.use(helmet());
-// app.use(mongoSanitize());
-
-// Remove this as we're using cors middleware now
-// app.use((req, res, next) => {
-//     res.set('Cross-Origin-Resource-Policy', 'cross-origin');
-//     next();
-// });
 
 // Middleware 
 app.use(requestLogger);
@@ -61,11 +38,8 @@ app.get('/api/setupdb', async (req, res, next) => {
     }
 });
 
-// Error handling middleware (must be last)
+// Error handling middleware 
 app.use(errorLogger);
-app.use((err, req, res, next) => {
-    errorResponse(res, 500, err.message);
-});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

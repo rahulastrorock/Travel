@@ -18,27 +18,35 @@ class GuideService {
 
     async searchGuides(searchParams) {
         try {
-            console.log(searchParams);
-            const { destination, tags, budget, productType } = searchParams;
+            const { destination, tags, budgetMin, budgetMax, productType } = searchParams;
+    
             const query = {};
-            
     
             // Build search query
             if (destination) {
                 query.destination = new RegExp(destination, 'i');  // Case-insensitive search
             }
-            
-            if (budget) {
-                // Apply both min and max budget filters correctly
-                if (budget.min !== undefined) query['budget.min'] = { $gte: parseInt(budget.min) }; // min filter
-                if (budget.max !== undefined) query['budget.max'] = { $lte: parseInt(budget.max) }; // max filter
+    
+            if (budgetMin || budgetMax) {
+                //parse the values as integers
+                if (budgetMin) {
+                    query['budget.min'] = { $gte: parseInt(budgetMin) }; // min filter
+                }
+                if (budgetMax) {
+                    query['budget.max'] = { $lte: parseInt(budgetMax) }; // max filter
+                }
             }
     
+            // Simple tag search using $in operator
             if (tags) {
-                // If tags are provided, split by comma and search for matching tags
-                query.tags = { $in: tags.split(',').map(tag => tag.trim()) };
-            }
+                // Convert string input to array if needed
+                const searchTags = typeof tags === 'string' ? [tags] : tags;
     
+                // Case-insensitive search for any matching tag
+                query.tags = { 
+                    $in: searchTags.map(tag => new RegExp(tag, 'i'))
+                };
+            }
             if (productType) {
                 query.productType = productType;
             }
@@ -56,6 +64,7 @@ class GuideService {
             throw new Error(`Error searching guides: ${error.message}`);
         }
     }
+    
     
 
     async addToFavorites(userId, guideId) {

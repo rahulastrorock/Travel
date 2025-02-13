@@ -41,10 +41,6 @@ class GroupService {
             throw new Error('Group not found');
         }
 
-        if (!group.isPublic) {
-            throw new Error('This is a private group');
-        }
-
         if (group.members.includes(userId)) {
             throw new Error('You are already a member of this group');
         }
@@ -61,26 +57,41 @@ class GroupService {
         return group;
     }
 
-    async leaveGroup(groupId, userId) {
-        const group = await TravelGroup.findById(groupId);
+    // async leaveGroup(groupId, userId) {
+    //     const group = await TravelGroup.findById(groupId);
+    //     if (!group) {
+    //         throw new Error('Group not found');
+    //     }
+
+    //     if (group.creator.toString() === userId.toString()) {
+    //         throw new Error('Group creator cannot leave the group');
+    //     }
+
+    //     group.members.pull(userId);
+    //     await group.save();
+
+    //     await User.findByIdAndUpdate(
+    //         userId,
+    //         { $pull: { groups: group._id } }
+    //     );
+
+    //     return group;
+    // }
+
+    //find gropy by id
+    async getGroupById(groupId) {
+        const group = await TravelGroup.findById(groupId)
+            .populate('creator', 'username')
+            .populate('members', 'username')
+            .populate('messages.sender', 'username');
+
         if (!group) {
             throw new Error('Group not found');
         }
 
-        if (group.creator.toString() === userId.toString()) {
-            throw new Error('Group creator cannot leave the group');
-        }
-
-        group.members.pull(userId);
-        await group.save();
-
-        await User.findByIdAndUpdate(
-            userId,
-            { $pull: { groups: group._id } }
-        );
-
         return group;
     }
+
 
     async addMessage(groupId, userId, content) {
         const group = await TravelGroup.findById(groupId);
